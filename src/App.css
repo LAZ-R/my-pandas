@@ -1,117 +1,212 @@
 .App {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  background-color: #754444;
-  padding: 10px 10px;
-  color: #dac295;
-  font-weight: 700;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #afbac5;
+    color: #323538;
+    font-weight: 700;
+}
+.headerZone {
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #8e99a3;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0;
+}
+.logoZone {
+    cursor: pointer;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+}
+.logo:hover {
+    width: 45px;
+    height: 45px;
+}
+.headerBlank {
+    height: 60px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 20%;
+
+    font-size: 15px;
+}
+
+.pageTitle {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .home {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 25px;
-  margin-top: 10px;
-}
+    width: 100%;
+    height: 100%;
 
-.logoCircle {
-  width: 100px;
-  height: 100px;
-  background-color: #dac295;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .pandasListView {
-  width: 100%;
-  height: 100%;
-  padding: 10px 10px;
+    width: 100%;
+    height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .pandasList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .pandaItem {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  background-color: #814e4e;
-  border-radius: 7.5px;
-  padding: 4px 15px;
-  margin: 4px 5px;
-  cursor: pointer;
-  transition: background-color 0.1s;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #8e99a3;
+    border-radius: 7.5px;
+    padding: 4px 15px;
+    margin: 4px 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
 }
 .pandaItem:hover {
-  background-color: #8b5656;
-  transition: background-color 0.1s;
+    background-color: #828b94;
+    transition: background-color 0.1s;
 }
 
 .pandaDetailsView {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 10px;
-  font-size: 25px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .pandaDetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
 }
 .pandaDetailsName {
-  display: flex;
-  font-size: 20px;
-  margin-bottom: 10px;
-  width: 100%;
-  justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
 }
 .pandaDetailsPhoto {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .pandaPhoto {
-  width: 100%;
-  border-radius: 20px;
+    width: 350px;
+    border-radius: 20px;
 }
 .pandaDetailsInterests {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 .value {
-  color: #ffffff;
+    color: #ffffff;
+}
+
+.pandaFormView {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pandaForm {
+    border: 2px solid #323538;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formSubCategory {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323538;
+    color: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 10px 0 !important;
+}
+
+button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 5px 5px;
+    border-radius: 10px !important;
+    background-color: #323538;
+    color: #ffffff;
+    margin: 10px 0 !important;
+}
+
+.cancelButton {
+    background-color: #573232;
+    color: #ffffff;
+}
+.cancelButton:hover {
+    background-color: #6d3f3f;
+}
+
+.acceptButton {
+    background-color: #32573d !important;
+    color: #ffffff;
+}
+.acceptButton:hover {
+    background-color: #406e4e !important;
 }

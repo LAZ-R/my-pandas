@@ -13,7 +13,7 @@ const PandasListView = () => {
   const { data, isLoading, error } = usePandas();
   return (
     <div className="pandasListView">
-      <span>Liste des pandas</span>
+      <span className="pageTitle">Liste des pandas</span>
       {isLoading && <Spinner />}
       {error && <p>On a une erreur</p>}
       {!isLoading && data && <PandasList pandas={data} onPress={handlePress} />}

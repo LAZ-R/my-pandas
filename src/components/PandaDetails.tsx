@@ -17,7 +17,7 @@ const PandaDetails = (props: PandaDetailsProps) => {
       <div className="pandaDetailsInterests">
         Centres d'intéret :
         {props.panda.interests.map((interest: string) => (
-          <li>
+          <li key={interest}>
             <span className="value">{interest}</span>
           </li>
         ))}

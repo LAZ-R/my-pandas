@@ -11,11 +11,10 @@ const handleClose = () => {
 const PandaDetailsView = () => {
   let params = useParams();
   let id = params.pandaId;
-  console.log(params);
   const { data, isLoading, error } = usePandaDetails(id);
   return (
     <div className="pandaDetailsView">
-      <span>Détails du panda</span>
+      <span className="pageTitle">Détails du panda</span>
       {isLoading && <Spinner />}
       {error && <p>On a une erreur</p>}
       {!isLoading && data && (
