@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { Input, Label } from "reactstrap";
 
 export type PandaFormValues = {
     key: string;
@@ -23,29 +24,29 @@ const PandaForm = (props: PandaFormProps) => {
         <div className="pandaForm">
             <form onSubmit={handleSubmit(props.onSubmit)}>
                 <div className="formSubCategory">
-                    <label htmlFor="key">Id :</label>
-                    <input {...register("key", { required: true })} />
+                    <Label for="key">Id :</Label>
+                    <Input {...register("key", { required: true })} />
                     {errors.key && <span>Ce champ est requis</span>}
                 </div>
                 <div className="formSubCategory">
-                    <label htmlFor="nom">Nom :</label>
-                    <input {...register("nom", { required: true })} />
+                    <Label for="nom">Nom :</Label>
+                    <Input {...register("nom", { required: true })} />
                     {errors.nom && <span>Ce champ est requis</span>}
                 </div>
                 <div className="formSubCategory">
-                    <label htmlFor="interest">Centres d'intérêt :</label>
-                    <input {...register("interest", { required: true })} />
+                    <Label for="interest">Centres d'intérêt :</Label>
+                    <Input {...register("interest", { required: true })} />
                     {errors.interest && <span>Ce champ est requis</span>}
                 </div>
                 <div className="formSubCategory">
-                    <label htmlFor="image">Image :</label>
-                    <input {...register("image", { required: true })} />
+                    <Label for="image">Image :</Label>
+                    <Input {...register("image", { required: true })} />
                     {errors.image && <span>Ce champ est requis</span>}
                 </div>
 
-                <input type="submit" value="Valider" className="acceptButton" />
+                <Input type="submit" value="Valider" className="acceptButton" />
 
-                <button className="cancelButton">annuler</button>
+                <button className="cancelButton">Annuler</button>
             </form>
         </div>
     );
