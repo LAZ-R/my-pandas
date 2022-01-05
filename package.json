@@ -10,9 +10,15 @@
     "@types/node": "^16.11.18",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "axios": "^0.24.0",
+    "bootstrap": "^5.1.3",
+    "json-server": "^0.17.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-query": "^3.34.7",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "reactstrap": "^9.0.1",
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.2"
   },
@@ -20,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server": "npx json-server --watch ./json-server/db.json --port 3004 --id key"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/reactstrap": "^8.7.2",
+    "prettier": "^2.5.1"
   }
 }

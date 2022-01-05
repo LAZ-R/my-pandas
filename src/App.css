@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  height: 100vh;
+  background-color: #754444;
+  padding: 10px 10px;
+  color: #dac295;
+  font-weight: 700;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.logoCircle {
+  width: 100px;
+  height: 100px;
+  background-color: #dac295;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 60px;
+  height: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pandasListView {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.pandasList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pandaItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #814e4e;
+  border-radius: 7.5px;
+  padding: 4px 15px;
+  margin: 4px 5px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+.pandaItem:hover {
+  background-color: #8b5656;
+  transition: background-color 0.1s;
+}
+
+.pandaDetailsView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.pandaDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.pandaDetailsName {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+.pandaDetailsPhoto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.pandaPhoto {
+  width: 100%;
+  border-radius: 20px;
+}
+.pandaDetailsInterests {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.value {
+  color: #ffffff;
 }
