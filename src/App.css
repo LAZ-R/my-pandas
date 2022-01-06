@@ -27,13 +27,37 @@
     cursor: pointer;
 }
 .logo {
-    width: 40px;
-    height: 40px;
-}
-.logo:hover {
     width: 45px;
     height: 45px;
+    transition: opacity 0.1s;
 }
+.logo:hover {
+    opacity: 50%;
+}
+
+.rightZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerIcon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 30px;
+    margin-left: 10px;
+    border: 2px solid #323538;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.headerIcon:hover {
+    background-color: #7c868f;
+}
+
 .headerBlank {
     height: 60px;
 }
@@ -42,14 +66,14 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 20px 20%;
+    padding: 20px 15%;
 
     font-size: 15px;
 }
 
 .pageTitle {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 .home {
@@ -60,6 +84,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.smallP {
+    font-size: 12.5px;
 }
 
 .pandasListView {
@@ -126,7 +154,7 @@
     margin-bottom: 10px;
 }
 .pandaPhoto {
-    width: 350px;
+    width: 100%;
     border-radius: 20px;
 }
 .pandaDetailsInterests {
@@ -157,9 +185,12 @@
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
+
+    margin-top: 10px;
 }
 
 form {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }

@@ -10,20 +10,24 @@ const Header = () => {
                 <div className="logoZone" onClick={() => navigate("/")}>
                     <Logo />
                 </div>
-                <Button
-                    onClick={() => {
-                        navigate("/pandas");
-                    }}
-                >
-                    My Pandas
-                </Button>
-                <Button
-                    onClick={() => {
-                        navigate("/pandas/new");
-                    }}
-                >
-                    Nouveau PANDA
-                </Button>
+                <div className="rightZone">
+                    <div className="headerIcon">
+                        <i
+                            className="fas fa-plus"
+                            onClick={() => {
+                                navigate("/pandas/new");
+                            }}
+                        ></i>
+                    </div>
+                    <div className="headerIcon">
+                        <i
+                            className="fas fa-list"
+                            onClick={() => {
+                                navigate("/pandas");
+                            }}
+                        ></i>
+                    </div>
+                </div>
             </div>
             <div className="headerBlank"></div>
         </div>
